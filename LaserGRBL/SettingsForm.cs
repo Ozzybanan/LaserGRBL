@@ -41,6 +41,7 @@ namespace LaserGRBL
 			CBProtocol.SelectedItem = Settings.GetObject("ComWrapper Protocol", ComWrapper.WrapperType.UsbSerial);
 			CBStreamingMode.SelectedItem = Settings.GetObject("Streaming Mode", GrblCore.StreamingMode.Buffered);
 			CbUnidirectional.Checked = Settings.GetObject("Unidirectional Engraving", false);
+			CbDisableSkip.Checked = Settings.GetObject("Disable G0 fast skip", false);
 			CbThreadingMode.SelectedItem = Settings.GetObject("Threading Mode", GrblCore.ThreadingMode.UltraFast);
 			CbIssueDetector.Checked = !Settings.GetObject("Do not show Issue Detector", false);
 			CbSoftReset.Checked = Settings.GetObject("Reset Grbl On Connect", true);
@@ -118,7 +119,8 @@ namespace LaserGRBL
             CBCore.Items.Add(Firmware.Grbl);
             CBCore.Items.Add(Firmware.Smoothie);
             CBCore.Items.Add(Firmware.Marlin);
-            CBCore.EndUpdate();
+			CBCore.Items.Add(Firmware.VigoWork);
+			CBCore.EndUpdate();
         }
 
         private void InitThreadingCB()
@@ -164,6 +166,7 @@ namespace LaserGRBL
 			Settings.SetObject("ComWrapper Protocol", CBProtocol.SelectedItem);
 			Settings.SetObject("Streaming Mode", CBStreamingMode.SelectedItem);
 			Settings.SetObject("Unidirectional Engraving", CbUnidirectional.Checked);
+			Settings.SetObject("Disable G0 fast skip", CbDisableSkip.Checked);
 			Settings.SetObject("Threading Mode", CbThreadingMode.SelectedItem);
 			Settings.SetObject("Do not show Issue Detector", !CbIssueDetector.Checked);
 			Settings.SetObject("Reset Grbl On Connect", CbSoftReset.Checked);
@@ -212,34 +215,22 @@ namespace LaserGRBL
 		}
 
 		private void BtnModulationInfo_Click(object sender, EventArgs e)
-		{
-			System.Diagnostics.Process.Start(@"http://lasergrbl.com/configuration/#pwm-support");
-		}
+		{Tools.Utils.OpenLink(@"https://lasergrbl.com/configuration/#pwm-support");}
 
 		private void BtnLaserMode_Click(object sender, EventArgs e)
-		{
-			System.Diagnostics.Process.Start(@"http://lasergrbl.com/configuration/#laser-mode");
-		}
+		{Tools.Utils.OpenLink(@"https://lasergrbl.com/configuration/#laser-mode");}
 
 		private void BtnProtocol_Click(object sender, EventArgs e)
-		{
-			System.Diagnostics.Process.Start(@"http://lasergrbl.com/configuration/#protocol");
-		}
+		{Tools.Utils.OpenLink(@"https://lasergrbl.com/configuration/#protocol");}
 
 		private void BtnStreamingMode_Click(object sender, EventArgs e)
-		{
-			System.Diagnostics.Process.Start(@"http://lasergrbl.com/configuration/#streaming-mode");
-		}
+		{Tools.Utils.OpenLink(@"https://lasergrbl.com/configuration/#streaming-mode");}
 
 		private void BtnThreadingModel_Click(object sender, EventArgs e)
-		{
-			System.Diagnostics.Process.Start(@"http://lasergrbl.com/configuration/#threading-mode");
-		}
+		{Tools.Utils.OpenLink(@"https://lasergrbl.com/configuration/#threading-mode");}
 
         private void BtnFType_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start(@"http://lasergrbl.com/configuration/#firmware-type");
-        }
+        {Tools.Utils.OpenLink(@"https://lasergrbl.com/configuration/#firmware-type");}
 
         private void changeSucBtn_Click(object sender, EventArgs e)
         {

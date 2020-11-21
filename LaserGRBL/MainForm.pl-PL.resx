@@ -315,4 +315,40 @@
   <data name="licenseToolStripMenuItem.Text" xml:space="preserve">
     <value>Licencja</value>
   </data>
+  <data name="MnWiFiDiscovery.Text" xml:space="preserve">
+    <value>Wykrywanie WiFi</value>
+  </data>
+  <data name="MnRunMulti.Text" xml:space="preserve">
+    <value>S&amp;ynchro Start/Wstrzymanie/Wznowienie</value>
+  </data>
+  <data name="traditionalChineseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chiński(tradycyjny)</value>
+  </data>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Polski</value>
+  </data>
+  <data name="orturSupportGroupToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grupa użytkowników Ortur</value>
+  </data>
+  <data name="orturSupportAndFeedbackToolStripMenuItem.Text" xml:space="preserve">
+    <value>Wsparcie i opinie Ortur</value>
+  </data>
+  <data name="orturWebsiteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Strona internetowa Ortur</value>
+  </data>
+  <data name="youtubeChannelToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kanał Youtube</value>
+  </data>
+  <data name="manualsDownloadToolStripMenuItem.Text" xml:space="preserve">
+    <value>Instrukcje Ortur</value>
+  </data>
+  <data name="firmwareToolStripMenuItem.Text" xml:space="preserve">
+    <value>Oprogramowanie Ortur</value>
+  </data>
+  <data name="MnOrtur.Text" xml:space="preserve">
+    <value>Ortur</value>
+  </data>
+  <data name="facebookCommunityToolStripMenuItem.Text" xml:space="preserve">
+    <value>Społeczność LaserGrbl</value>
+  </data>
 </root>

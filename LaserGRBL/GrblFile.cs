@@ -253,6 +253,8 @@ namespace LaserGRBL
 
 		public void LoadImagePotrace(Bitmap bmp, string filename, bool UseSpotRemoval, int SpotRemoval, bool UseSmoothing, decimal Smoothing, bool UseOptimize, decimal Optimize, bool useOptimizeFast, L2LConf c, bool append)
 		{
+			skipcmd = Settings.GetObject("Disable G0 fast skip", false) ? "G1" : "G0";
+
 			RiseOnFileLoading(filename);
 
 			bmp.RotateFlip(RotateFlipType.RotateNoneFlipY);
@@ -279,7 +281,7 @@ namespace LaserGRBL
 					using (Graphics g = Graphics.FromImage(ptb))
 					{
 						//Potrace.Export2GDIPlus(plist, g, Brushes.Black, null, (Math.Max(c.res/c.fres, 1) + 1) / 2.0f);
-						Potrace.Export2GDIPlus(plist, g, Brushes.Black, null, Math.Max(1, c.res / c.fres));
+						Potrace.Export2GDIPlus(plist, g, Brushes.Black, null, Math.Max(1, c.res / c.fres), skipcmd);
 						using (Bitmap resampled = RasterConverter.ImageTransform.ResizeImage(ptb, new Size((int)(bmp.Width * c.fres / c.res), (int)(bmp.Height * c.fres / c.res)), true, InterpolationMode.HighQualityBicubic))
 						{
 							if (c.pwm)
@@ -314,7 +316,7 @@ namespace LaserGRBL
 			list.Add(new GrblCommand(String.Format("F{0}", c.borderSpeed)));
 
 			//trace borders
-			List<string> gc = Potrace.Export2GCode(plist, c.oX, c.oY, c.res, c.lOn, c.lOff, bmp.Size);
+			List<string> gc = Potrace.Export2GCode(plist, c.oX, c.oY, c.res, c.lOn, c.lOff, bmp.Size, skipcmd);
 
 			foreach (string code in gc)
 				list.Add(new GrblCommand(code));
@@ -359,8 +361,12 @@ namespace LaserGRBL
 			public Firmware firmwareType;
 		}
 
+		private string skipcmd = "G0";
 		public void LoadImageL2L(Bitmap bmp, string filename, L2LConf c, bool append)
 		{
+
+			skipcmd = Settings.GetObject("Disable G0 fast skip", false) ? "G1" : "G0";
+
 			RiseOnFileLoading(filename);
 
 			bmp.RotateFlip(RotateFlipType.RotateNoneFlipY);
@@ -376,7 +382,7 @@ namespace LaserGRBL
 			//list.Add(new GrblCommand("G90")); //(Moved to custom Header)
 
 			//move fast to offset
-			list.Add(new GrblCommand(String.Format("G0 X{0} Y{1}", formatnumber(c.oX), formatnumber(c.oY))));
+			list.Add(new GrblCommand(String.Format("{0} X{1} Y{2}", skipcmd, formatnumber(c.oX), formatnumber(c.oY))));
 			if (c.pwm)
 				list.Add(new GrblCommand(String.Format("{0} S0", c.lOn))); //laser on and power to zero
 			else
@@ -440,7 +446,7 @@ namespace LaserGRBL
 				//{
 
 				if (changeGMode)
-					temp.Add(new GrblCommand(String.Format("{0} {1}", fast ? "G0" : "G1", seg.ToGCodeNumber(ref cumX, ref cumY, c))));
+					temp.Add(new GrblCommand(String.Format("{0} {1}", fast ? skipcmd : "G1", seg.ToGCodeNumber(ref cumX, ref cumY, c))));
 				else
 					temp.Add(new GrblCommand(seg.ToGCodeNumber(ref cumX, ref cumY, c)));
 
@@ -490,9 +496,9 @@ namespace LaserGRBL
 					if (oldcumulate && !cumulate) //cumulate down front -> flush
 					{
 						if (c.pwm)
-							rv.Add(new GrblCommand(string.Format("G0 X{0} Y{1} S0", formatnumber((double)curX), formatnumber((double)curY))));
+							rv.Add(new GrblCommand(string.Format("{0} X{1} Y{2} S0", skipcmd, formatnumber((double)curX), formatnumber((double)curY))));
 						else
-							rv.Add(new GrblCommand(string.Format("G0 X{0} Y{1} {2}", formatnumber((double)curX), formatnumber((double)curY), c.lOff)));
+							rv.Add(new GrblCommand(string.Format("{0} X{1} Y{2} {3}", skipcmd, formatnumber((double)curX), formatnumber((double)curY), c.lOff)));
 
 						//curX = curY = 0;
 					}

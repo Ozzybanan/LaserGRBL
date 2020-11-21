@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LaserGRBL"
-#define MyAppVersion "3.5.3"
+#define MyAppVersion "3.8.1"
 #define MyAppVersionName "Rhyhorn"
 #define MyAppPublisher "LaserGRBL"
-#define MyAppURL "http://lasergrbl.com"
+#define MyAppURL "https://lasergrbl.com"
 #define MyAppExeName "LaserGRBL.exe"
 
 [Setup]
@@ -21,12 +21,12 @@ AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
-DisableDirPage=yes
+DisableDirPage=no
 DisableProgramGroupPage=yes
 OutputDir=.\
 OutputBaseFilename=install
-Compression=lzma/ultra64
-SolidCompression=yes
+Compression=zip
+SolidCompression=no
 InternalCompressLevel=ultra64
 CompressionThreads=2
 RestartIfNeededByRun=False
@@ -58,6 +58,7 @@ Source: ".\LaserGRBL\bin\Release\sk-SK\LaserGRBL.resources.dll"; DestDir: "{app}
 Source: ".\LaserGRBL\bin\Release\hu-HU\LaserGRBL.resources.dll"; DestDir: "{app}\hu-HU"; Flags: ignoreversion
 Source: ".\LaserGRBL\bin\Release\cs-CZ\LaserGRBL.resources.dll"; DestDir: "{app}\cs-CZ"; Flags: ignoreversion
 Source: ".\LaserGRBL\bin\Release\pl-PL\LaserGRBL.resources.dll"; DestDir: "{app}\pl-PL"; Flags: ignoreversion
+Source: ".\LaserGRBL\bin\Release\zh-TW\LaserGRBL.resources.dll"; DestDir: "{app}\zh-TW"; Flags: ignoreversion
 Source: ".\LaserGRBL\bin\Release\Driver\*"; DestDir: "{app}\Driver"; Flags: ignoreversion
 Source: ".\LaserGRBL\bin\Release\Firmware\*"; DestDir: "{app}\Firmware"; Flags: ignoreversion
 Source: ".\LaserGRBL\bin\Release\LaserGRBL.exe.config"; DestDir: "{app}"; Flags: ignoreversion

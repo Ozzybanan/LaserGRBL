@@ -15,11 +15,13 @@ namespace LaserGRBL
 	{
 		private GrblCore Core;
 		private bool FirstIdle = true;
+		private UsageStats.MessageData ToolBarMessage;
 
 		public MainForm()
 		{
 			InitializeComponent();
 
+			MnOrtur.Visible = false;
 			MMn.Renderer = new MMnRenderer();
 
 			splitContainer1.FixedPanel = FixedPanel.Panel1;
@@ -42,10 +44,17 @@ namespace LaserGRBL
 				Core = new SmoothieCore(this, PreviewForm, JogForm);
 			else if (ftype == Firmware.Marlin)
 				Core = new MarlinCore(this, PreviewForm, JogForm);
+			else if (ftype == Firmware.VigoWork)
+				Core = new VigoCore(this, PreviewForm, JogForm);
 			else
 				Core = new GrblCore(this, PreviewForm, JogForm);
-
 			ExceptionManager.Core = Core;
+
+			if (true) //use multi instance trigger
+			{
+				SincroStart.StartListen(Core);
+				MultipleInstanceTimer.Enabled = true;
+			}
 
 			MnGrblConfig.Visible = Core.UIShowGrblConfig;
 			MnUnlock.Visible = Core.UIShowUnlockButtons;
@@ -129,6 +138,28 @@ namespace LaserGRBL
 			if (state == FormWindowState.Normal)
 			{ WindowState = state; Size = (Size)msp[0]; Location = (Point)msp[1]; }
 			ResumeLayout();
+
+			ManageMessage();
+		}
+
+		private void ManageMessage()
+		{
+			try
+			{
+				foreach (UsageStats.MessageData M in UsageStats.Messages.GetMessages(UsageStats.MessageData.MessageTypes.AutoLink))
+				{
+					Tools.Utils.OpenLink(M.Content);
+					UsageStats.Messages.ClearMessage(M);
+				}
+
+				ToolBarMessage = UsageStats.Messages.GetMessage(UsageStats.MessageData.MessageTypes.ToolbarLink);
+				if (ToolBarMessage != null && ToolBarMessage.Title != null && ToolBarMessage.Content != null)
+				{
+					TTLinkToNews.Text = ToolBarMessage.Title;
+					TTLinkToNews.Enabled = true;
+				}
+			}
+			catch (Exception ex){ }
 		}
 
 		void OnFileLoaded(long elapsed, string filename)
@@ -165,11 +196,12 @@ namespace LaserGRBL
 		}
 		void MainFormFormClosing(object sender, FormClosingEventArgs e)
 		{
-			if (Core.InProgram && System.Windows.Forms.MessageBox.Show(Strings.ExitAnyway, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) != System.Windows.Forms.DialogResult.Yes)
+			if (Core.InProgram && System.Windows.Forms.MessageBox.Show(Strings.ExitAnyway, Strings.WarnMessageBoxHeader, MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) != System.Windows.Forms.DialogResult.Yes)
 				e.Cancel = true;
 
 			if (!e.Cancel)
 			{
+				SincroStart.StopListen();
 				Core.CloseCom(true);
 				Settings.SetObject("Mainform Size and Position", new object[] { Size, Location, WindowState });
 				Settings.Save();
@@ -206,6 +238,7 @@ namespace LaserGRBL
 			MnAdvancedSave.Enabled = MnSaveProgram.Enabled = Core.HasProgram;
 			MnFileSend.Enabled = Core.CanSendFile;
 			MnStartFromPosition.Enabled = Core.CanSendFile;
+			MnRunMulti.Enabled = Core.CanSendFile || Core.CanResumeHold || Core.CanFeedHold;
 			MnGrblConfig.Enabled = true;
 			//MnExportConfig.Enabled = Core.CanImportExport;
 			//MnImportConfig.Enabled = Core.CanImportExport;
@@ -225,6 +258,8 @@ namespace LaserGRBL
 			TTOvS.Visible = Core.SupportOverride;
 			spacer.Visible = Core.SupportOverride;
 
+			ComWrapper.WrapperType wt = Settings.GetObject("ComWrapper Protocol", ComWrapper.WrapperType.UsbSerial);
+			MnWiFiDiscovery.Visible = wt == ComWrapper.WrapperType.LaserWebESP8266 || wt == ComWrapper.WrapperType.Telnet;
 
 			switch (Core.MachineStatus)
 			{
@@ -255,7 +290,7 @@ namespace LaserGRBL
 			PbBuffer.Maximum = Core.BufferSize;
 			PbBuffer.Value = Core.UsedBuffer;
 			PbBuffer.ToolTipText = $"Buffer: {Core.UsedBuffer}/{Core.BufferSize} Free:{Core.FreeBuffer}";
-
+			MnOrtur.Visible = Core.IsOrturBoard;
 
 			ResumeLayout();
 		}
@@ -355,7 +390,7 @@ namespace LaserGRBL
 
 		private void MnDisconnect_Click(object sender, EventArgs e)
 		{
-			if (!(Core.InProgram && System.Windows.Forms.MessageBox.Show(Strings.DisconnectAnyway, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) != System.Windows.Forms.DialogResult.Yes))
+			if (!(Core.InProgram && System.Windows.Forms.MessageBox.Show(Strings.DisconnectAnyway, Strings.WarnMessageBoxHeader, MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) != System.Windows.Forms.DialogResult.Yes))
 				Core.CloseCom(true);
 		}
 		void MnSaveProgramClick(object sender, EventArgs e)
@@ -398,7 +433,7 @@ namespace LaserGRBL
 
 		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			System.Diagnostics.Process.Start(@"http://lasergrbl.com/");
+			Tools.Utils.OpenLink(@"https://lasergrbl.com/faq/");
 		}
 
 		private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
@@ -505,7 +540,7 @@ namespace LaserGRBL
 
 		private void donateToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			System.Diagnostics.Process.Start(@"https://paypal.me/pools/c/8cQ1Lo4sRA");
+			Tools.Utils.OpenLink(@"https://paypal.me/pools/c/8cQ1Lo4sRA");
 		}
 
 
@@ -748,6 +783,71 @@ namespace LaserGRBL
 		private void polishToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			SetLanguage(new System.Globalization.CultureInfo("pl-PL"));
+		}
+
+		private void orturSupportGroupToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Tools.Utils.OpenLink(@"https://lasergrbl.com/orturfacebook/");
+		}
+
+		private void orturWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Tools.Utils.OpenLink(@"https://lasergrbl.com/orturwebsite/");
+		}
+
+		private void traditionalChineseToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			SetLanguage(new System.Globalization.CultureInfo("zh-TW"));
+		}
+
+		private void youtubeChannelToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Tools.Utils.OpenLink(@"https://lasergrbl.com/orturYTchannel/");
+		}
+
+		private void firmwareToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Tools.Utils.OpenLink(@"https://lasergrbl.com/ortur-firmware/");
+		}
+
+		private void manualsDownloadToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Tools.Utils.OpenLink(@"https://lasergrbl.com/ortur-manuals/");
+		}
+
+		private void MultipleInstanceTimer_Tick(object sender, EventArgs e)
+		{
+			MultipleInstanceTimer.Interval = 5000;
+			MnRunMulti.Visible = MnRunMultiSep.Visible = SincroStart.Running() && System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Length > 1;
+		}
+
+		bool MultiRunShown = false;
+		private void MnRunMulti_Click(object sender, EventArgs e)
+		{
+			if (MultiRunShown || MessageBox.Show(this, "Warning: this command will start/resume all job in any running LaserGRBL instance!", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+			{
+				SincroStart.Signal();
+				MultiRunShown = true;
+			}
+		}
+
+		private void orturSupportAndFeedbackToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Tools.Utils.OpenLink(@"https://lasergrbl.com/ortursupport/");
+		}
+
+		private void TTLinkToNews_Click(object sender, EventArgs e)
+		{
+			if (ToolBarMessage != null && ToolBarMessage.Title != null && ToolBarMessage.Content != null)
+			{
+				Tools.Utils.OpenLink(ToolBarMessage.Content);
+				UsageStats.Messages.ClearMessage(ToolBarMessage);
+			}
+		}
+
+		private void MnWiFiDiscovery_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 

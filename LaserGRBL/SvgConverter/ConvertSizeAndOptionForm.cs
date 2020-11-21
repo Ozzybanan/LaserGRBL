@@ -92,7 +92,7 @@ namespace LaserGRBL.SvgConverter
 				CBLaserOFF.SelectedIndex = 0;
 
 			IIMinPower.CurrentValue = Settings.GetObject("GrayScaleConversion.Gcode.LaserOptions.PowerMin", 0);
-			IIMaxPower.CurrentValue = Settings.GetObject("GrayScaleConversion.Gcode.LaserOptions.PowerMax", 255);
+			IIMaxPower.CurrentValue = Settings.GetObject("GrayScaleConversion.Gcode.LaserOptions.PowerMax", (int)mCore.Configuration.MaxPWM);
 
 			IIBorderTracing.Visible = LblBorderTracing.Visible = LblBorderTracingmm.Visible = true;
 
@@ -122,14 +122,10 @@ namespace LaserGRBL.SvgConverter
 		}
 
 		private void BtnOnOffInfo_Click(object sender, EventArgs e)
-		{
-			System.Diagnostics.Process.Start(@"http://lasergrbl.com/usage/raster-image-import/target-image-size-and-laser-options/#laser-modes");
-		}
+		{Tools.Utils.OpenLink(@"https://lasergrbl.com/usage/raster-image-import/target-image-size-and-laser-options/#laser-modes");}
 
 		private void BtnModulationInfo_Click(object sender, EventArgs e)
-		{
-			System.Diagnostics.Process.Start(@"http://lasergrbl.com/usage/raster-image-import/target-image-size-and-laser-options/#power-modulation");
-		}
+		{Tools.Utils.OpenLink(@"https://lasergrbl.com/usage/raster-image-import/target-image-size-and-laser-options/#power-modulation");}
 
 		private void CBLaserON_SelectedIndexChanged(object sender, EventArgs e)
 		{
