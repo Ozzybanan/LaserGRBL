@@ -682,13 +682,13 @@ namespace LaserGRBL.RasterConverter
 		private void BtnQualityInfo_Click(object sender, EventArgs e)
 		{
 			UDQuality.Value = Math.Min(UDQuality.Maximum, (decimal)ResolutionHelperForm.CreateAndShowDialog(mCore, (double)UDQuality.Value));
-			//Tools.Utils.OpenLink(@"https://lasergrbl.com/usage/raster-image-import/setting-reliable-resolution/");
+			//System.Diagnostics.Process.Start(@"http://lasergrbl.com/usage/raster-image-import/setting-reliable-resolution/");
 		}
 
 		private void BtnFillingQualityInfo_Click(object sender, EventArgs e)
 		{
 			UDFillingQuality.Value = Math.Min(UDFillingQuality.Maximum, (decimal)ResolutionHelperForm.CreateAndShowDialog(mCore, (double)UDFillingQuality.Value));
-			//Tools.Utils.OpenLink(@"https://lasergrbl.com/usage/raster-image-import/setting-reliable-resolution/");
+			//System.Diagnostics.Process.Start(@"http://lasergrbl.com/usage/raster-image-import/setting-reliable-resolution/");
 		}
 
 		private void TBWhiteClip_ValueChanged(object sender, EventArgs e)
@@ -737,30 +737,12 @@ namespace LaserGRBL.RasterConverter
 		{ if (IP != null) IP.UseAdaptiveQuality = CbAdaptiveQuality.Checked; }
 
 		private void BtnAdaptiveQualityInfo_Click(object sender, EventArgs e)
-		{ Tools.Utils.OpenLink(@"https://lasergrbl.com/usage/raster-image-import/vectorization-tool/#adaptive-quality");}
+		{System.Diagnostics.Process.Start(@"http://lasergrbl.com/usage/raster-image-import/vectorization-tool/#adaptive-quality");}
 
 		private void BtnAutoTrim_Click(object sender, EventArgs e)
 		{
 			if (IP != null)
 				IP.AutoTrim();
-		}
-
-		private void RbCenterline_Click(object sender, EventArgs e)
-		{
-			if (!Tools.OSHelper.Is64BitProcess)
-			{
-				MessageBox.Show(Strings.WarnCenterline64bit, Strings.WarnMessageBoxHeader, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-				//RbVectorize.Checked = true;
-			}
-		}
-
-		private void RbLineToLineTracing_Click(object sender, EventArgs e)
-		{
-			if (!supportPWM)
-			{
-				MessageBox.Show(Strings.WarnLine2LinePWM, Strings.WarnMessageBoxHeader, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-				//RbDithering.Checked = true;
-			}
 		}
 	}
 }

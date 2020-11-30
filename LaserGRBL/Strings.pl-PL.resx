@@ -328,16 +328,4 @@ Kontynuować mimo wszystko?</value>
   <data name="BoxAbortProgramConfirm" xml:space="preserve">
     <value>Przerwać obecną pracę?</value>
   </data>
-  <data name="WarnCenterline64bit" xml:space="preserve">
-    <value>Opcja Centerline nie jest kompatybilna z twoim komputerem.
-Potrzebny jest 64-bitowy system operacyjny!</value>
-  </data>
-  <data name="WarnMessageBoxHeader" xml:space="preserve">
-    <value>Ostrzeżenie</value>
-  </data>
-  <data name="WarnLine2LinePWM" xml:space="preserve">
-    <value>Opcja Line2Line nie jest kompatybilna z twoim grawerem lub twoją konfiguracją. 
-Wymagany jest laser z obsługą PWM, a obsługę PWM należy włączyć 
-w ustawieniach LaserGRBL.</value>
-  </data>
 </root>

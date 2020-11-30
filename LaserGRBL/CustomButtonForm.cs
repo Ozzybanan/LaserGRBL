@@ -164,7 +164,9 @@ namespace LaserGRBL
 		{
 			string link = (sender as LinkLabel).Tag.ToString();
 			if (!string.IsNullOrEmpty(link))
-			{Tools.Utils.OpenLink(link);}
+			{
+				System.Diagnostics.Process.Start(link);
+			}
 		}
 	}
 }

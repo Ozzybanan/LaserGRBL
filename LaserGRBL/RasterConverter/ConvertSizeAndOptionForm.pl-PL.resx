@@ -205,7 +205,4 @@ Kliknij, aby uzyskać więcej informacji ...</value>
   <data name="$this.Text" xml:space="preserve">
     <value>Obraz docelowy</value>
   </data>
-  <data name="BtnCenter.ToolTip" xml:space="preserve">
-    <value>Wyśrodkuj obraz w pionie i poziomie (zero na środku)</value>
-  </data>
 </root>

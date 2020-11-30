@@ -89,7 +89,6 @@
 			this.label19 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label21 = new System.Windows.Forms.Label();
-			this.label31 = new System.Windows.Forms.Label();
 			this.TpGCodeSettings = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
 			this.LblHeader = new System.Windows.Forms.Label();
@@ -145,8 +144,6 @@
 			this.label36 = new System.Windows.Forms.Label();
 			this.label28 = new System.Windows.Forms.Label();
 			this.SoundBrowserDialog = new System.Windows.Forms.OpenFileDialog();
-			this.CbDisableSkip = new System.Windows.Forms.CheckBox();
-			this.label39 = new System.Windows.Forms.Label();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.MainTabPage.SuspendLayout();
@@ -397,8 +394,6 @@
 			this.tableLayoutPanel4.Controls.Add(this.BtnModulationInfo, 0, 0);
 			this.tableLayoutPanel4.Controls.Add(this.CbHiRes, 1, 2);
 			this.tableLayoutPanel4.Controls.Add(this.label22, 2, 2);
-			this.tableLayoutPanel4.Controls.Add(this.CbDisableSkip, 1, 3);
-			this.tableLayoutPanel4.Controls.Add(this.label39, 2, 3);
 			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
 			// 
 			// label1
@@ -503,7 +498,6 @@
 			this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel8, 1, 2);
 			this.tableLayoutPanel6.Controls.Add(this.pictureBox1, 1, 3);
 			this.tableLayoutPanel6.Controls.Add(this.label21, 2, 3);
-			this.tableLayoutPanel6.Controls.Add(this.label31, 2, 4);
 			this.tableLayoutPanel6.Name = "tableLayoutPanel6";
 			// 
 			// label20
@@ -616,12 +610,6 @@
 			resources.ApplyResources(this.label21, "label21");
 			this.label21.ForeColor = System.Drawing.Color.Red;
 			this.label21.Name = "label21";
-			// 
-			// label31
-			// 
-			resources.ApplyResources(this.label31, "label31");
-			this.label31.ForeColor = System.Drawing.Color.Red;
-			this.label31.Name = "label31";
 			// 
 			// TpGCodeSettings
 			// 
@@ -970,17 +958,6 @@
 			// 
 			resources.ApplyResources(this.SoundBrowserDialog, "SoundBrowserDialog");
 			// 
-			// CbDisableSkip
-			// 
-			resources.ApplyResources(this.CbDisableSkip, "CbDisableSkip");
-			this.CbDisableSkip.Name = "CbDisableSkip";
-			this.CbDisableSkip.UseVisualStyleBackColor = true;
-			// 
-			// label39
-			// 
-			resources.ApplyResources(this.label39, "label39");
-			this.label39.Name = "label39";
-			// 
 			// SettingsForm
 			// 
 			resources.ApplyResources(this, "$this");
@@ -1162,8 +1139,5 @@
         private System.Windows.Forms.CheckBox CbPlayFatal;
         private System.Windows.Forms.CheckBox CbPlayConnect;
         private System.Windows.Forms.CheckBox CbPlayDisconnect;
-		private System.Windows.Forms.Label label31;
-		private System.Windows.Forms.CheckBox CbDisableSkip;
-		private System.Windows.Forms.Label label39;
-	}
+    }
 }

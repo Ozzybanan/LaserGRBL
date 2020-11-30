@@ -29,7 +29,7 @@ namespace LaserGRBL
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			Tools.Utils.OpenLink(@"https://paypal.me/pools/c/8cQ1Lo4sRA");
+			System.Diagnostics.Process.Start(@"https://paypal.me/pools/c/8cQ1Lo4sRA");
 		}
 
 		internal static void CreateAndShowDialog()
@@ -40,7 +40,7 @@ namespace LaserGRBL
 
 		private void RTBLinkClick(object sender, LinkClickedEventArgs e)
 		{
-			Tools.Utils.OpenLink(e.LinkText);
+			System.Diagnostics.Process.Start(e.LinkText);
 		}
 	}
 }

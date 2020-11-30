@@ -340,19 +340,4 @@ Klicken Sie für mehr Informationen ...</value>
   <data name="GbLaser.Text" xml:space="preserve">
     <value>Laser Optionen</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Offset</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>DPI</value>
-  </data>
-  <data name="CbAutosize.Text" xml:space="preserve">
-    <value>Automatische Größenanpassung</value>
-  </data>
-  <data name="BtnDPI.ToolTip" xml:space="preserve">
-    <value>DPI aus Exif-Informationen laden</value>
-  </data>
-  <data name="BtnPSHelper.ToolTip" xml:space="preserve">
-    <value>Laser &amp; Material DB öffnen</value>
-  </data>
 </root>

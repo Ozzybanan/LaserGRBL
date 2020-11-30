@@ -113,7 +113,6 @@ namespace LaserGRBL.RasterConverter
 			this.BtnCancel = new System.Windows.Forms.Button();
 			this.BtnCreate = new System.Windows.Forms.Button();
 			this.TT = new System.Windows.Forms.ToolTip(this.components);
-			this.BtnCenter = new LaserGRBL.UserControls.ImageButton();
 			this.tableLayoutPanel9.SuspendLayout();
 			this.GbSize.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
@@ -155,7 +154,6 @@ namespace LaserGRBL.RasterConverter
 			this.tableLayoutPanel3.Controls.Add(this.label7, 3, 2);
 			this.tableLayoutPanel3.Controls.Add(this.label11, 3, 3);
 			this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 0, 0);
-			this.tableLayoutPanel3.Controls.Add(this.BtnCenter, 5, 3);
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
 			// 
 			// label9
@@ -241,7 +239,7 @@ namespace LaserGRBL.RasterConverter
 			// tableLayoutPanel2
 			// 
 			resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-			this.tableLayoutPanel3.SetColumnSpan(this.tableLayoutPanel2, 6);
+			this.tableLayoutPanel3.SetColumnSpan(this.tableLayoutPanel2, 5);
 			this.tableLayoutPanel2.Controls.Add(this.label1, 2, 0);
 			this.tableLayoutPanel2.Controls.Add(this.CbAutosize, 0, 0);
 			this.tableLayoutPanel2.Controls.Add(this.IIDpi, 1, 0);
@@ -429,7 +427,7 @@ namespace LaserGRBL.RasterConverter
 			// IIMaxPower
 			// 
 			resources.ApplyResources(this.IIMaxPower, "IIMaxPower");
-			this.IIMaxPower.CurrentValue = 1000;
+			this.IIMaxPower.CurrentValue = 255;
 			this.IIMaxPower.ForcedText = null;
 			this.IIMaxPower.ForceMinMax = false;
 			this.IIMaxPower.MaxValue = 1000;
@@ -470,7 +468,7 @@ namespace LaserGRBL.RasterConverter
 			this.CBLaserOFF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.CBLaserOFF.FormattingEnabled = true;
 			this.CBLaserOFF.Items.AddRange(new object[] {
-            resources.GetString("CBLaserOFF.Items")});
+			resources.GetString("CBLaserOFF.Items")});
 			resources.ApplyResources(this.CBLaserOFF, "CBLaserOFF");
 			this.CBLaserOFF.Name = "CBLaserOFF";
 			this.CBLaserOFF.SelectedIndexChanged += new System.EventHandler(this.CBLaserOFF_SelectedIndexChanged);
@@ -501,20 +499,6 @@ namespace LaserGRBL.RasterConverter
 			this.TT.AutoPopDelay = 10000;
 			this.TT.InitialDelay = 500;
 			this.TT.ReshowDelay = 100;
-			// 
-			// BtnCenter
-			// 
-			this.BtnCenter.AltImage = null;
-			resources.ApplyResources(this.BtnCenter, "BtnCenter");
-			this.BtnCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtnCenter.Caption = null;
-			this.BtnCenter.Coloration = System.Drawing.Color.Empty;
-			this.BtnCenter.Image = ((System.Drawing.Image)(resources.GetObject("BtnCenter.Image")));
-			this.BtnCenter.Name = "BtnCenter";
-			this.BtnCenter.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.TT.SetToolTip(this.BtnCenter, resources.GetString("BtnCenter.ToolTip"));
-			this.BtnCenter.UseAltImage = false;
-			this.BtnCenter.Click += new System.EventHandler(this.BtnCenter_Click);
 			// 
 			// ConvertSizeAndOptionForm
 			// 
@@ -558,6 +542,5 @@ namespace LaserGRBL.RasterConverter
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
 		private System.Windows.Forms.Label label1;
 		private UserControls.ImageButton BtnPSHelper;
-		private UserControls.ImageButton BtnCenter;
 	}
 }

@@ -1078,7 +1078,6 @@
 			this.TT.SetToolTip(this.RbCenterline, resources.GetString("RbCenterline.ToolTip"));
 			this.RbCenterline.UseVisualStyleBackColor = true;
 			this.RbCenterline.CheckedChanged += new System.EventHandler(this.RbCenterline_CheckedChanged);
-			this.RbCenterline.Click += new System.EventHandler(this.RbCenterline_Click);
 			// 
 			// RbDithering
 			// 
@@ -1108,7 +1107,6 @@
 			this.TT.SetToolTip(this.RbLineToLineTracing, resources.GetString("RbLineToLineTracing.ToolTip"));
 			this.RbLineToLineTracing.UseVisualStyleBackColor = true;
 			this.RbLineToLineTracing.CheckedChanged += new System.EventHandler(this.RbLineToLineTracing_CheckedChanged);
-			this.RbLineToLineTracing.Click += new System.EventHandler(this.RbLineToLineTracing_Click);
 			// 
 			// tableLayoutPanel1
 			// 

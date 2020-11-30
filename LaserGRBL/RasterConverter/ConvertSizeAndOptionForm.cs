@@ -100,7 +100,7 @@ namespace LaserGRBL.RasterConverter
                 CBLaserOFF.SelectedIndex = 0;
 
             IIMinPower.CurrentValue = IP.MinPower = Settings.GetObject("GrayScaleConversion.Gcode.LaserOptions.PowerMin", 0);
-            IIMaxPower.CurrentValue = IP.MaxPower = Settings.GetObject("GrayScaleConversion.Gcode.LaserOptions.PowerMax", (int)mCore.Configuration.MaxPWM);
+            IIMaxPower.CurrentValue = IP.MaxPower = Settings.GetObject("GrayScaleConversion.Gcode.LaserOptions.PowerMax", 255);
 
             IILinearFilling.Visible = LblLinearFilling.Visible = LblLinearFillingmm.Visible = (IP.SelectedTool == ImageProcessor.Tool.Line2Line || IP.SelectedTool == ImageProcessor.Tool.Dithering || (IP.SelectedTool == ImageProcessor.Tool.Vectorize && (IP.FillingDirection != ImageProcessor.Direction.None)));
             IIBorderTracing.Visible = LblBorderTracing.Visible = LblBorderTracingmm.Visible = (IP.SelectedTool == ImageProcessor.Tool.Vectorize || IP.SelectedTool == ImageProcessor.Tool.Centerline);
@@ -154,12 +154,12 @@ namespace LaserGRBL.RasterConverter
 
         private void BtnOnOffInfo_Click(object sender, EventArgs e)
         {
-			Tools.Utils.OpenLink(@"https://lasergrbl.com/usage/raster-image-import/target-image-size-and-laser-options/#laser-modes");
+            System.Diagnostics.Process.Start(@"http://lasergrbl.com/usage/raster-image-import/target-image-size-and-laser-options/#laser-modes");
         }
 
         private void BtnModulationInfo_Click(object sender, EventArgs e)
         {
-			Tools.Utils.OpenLink(@"https://lasergrbl.com/usage/raster-image-import/target-image-size-and-laser-options/#power-modulation");
+            System.Diagnostics.Process.Start(@"http://lasergrbl.com/usage/raster-image-import/target-image-size-and-laser-options/#power-modulation");
         }
 
         private void CBLaserON_SelectedIndexChanged(object sender, EventArgs e)
@@ -225,12 +225,6 @@ namespace LaserGRBL.RasterConverter
 
 				IIMaxPower.CurrentValue = IIMaxPower.MaxValue * row.Power / 100;
 			}
-		}
-
-		private void BtnCenter_Click(object sender, EventArgs e)
-		{
-			IIOffsetY.CurrentValue = -(IISizeH.CurrentValue / 2);
-			IIOffsetX.CurrentValue = -(IISizeW.CurrentValue / 2);
 		}
 	}
 }
