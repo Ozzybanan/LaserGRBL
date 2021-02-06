@@ -112,37 +112,14 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LblCurrentVersion.Text" xml:space="preserve">
-    <value>0.0.0</value>
-  </data>
-  <data name="TxtHeader.Text" xml:space="preserve">
-    <value>Znaleziono nową wersję. Zalecamy aktualizację LaserGRBL, 
-	aby skorzystać z nowych funkcji i poprawki błędów.</value>
-  </data>
-  <data name="TxtCurrentV.Text" xml:space="preserve">
-    <value>Obecna wersja:</value>
-  </data>
-  <data name="LblLatestVersion.Text" xml:space="preserve">
-    <value>0.0.0</value>
-  </data>
-  <data name="TxtNewV.Text" xml:space="preserve">
-    <value>Ostatnia wersja:</value>
-  </data>
-  <data name="BtnWebsite.Text" xml:space="preserve">
-    <value>Strona internetowa</value>
-  </data>
-  <data name="BtnCancel.Text" xml:space="preserve">
-    <value>Anuluj</value>
-  </data>
-  <data name="BtnUpdate.Text" xml:space="preserve">
-    <value>Pobieranie!</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Formularz nowej wersji</value>
+  <data name="LblDescription.Text" xml:space="preserve">
+    <value>To narzędzie umożliwia wyszukanie adresu IP, który Twoja sieć przypisała Twojemu grawerowi podłączonemu przez WiFi. Przeskanuj sieć i spróbuj sprawdzić, czy port połączenia jest dostępny.
+
+Naciśnij przycisk „Scan”, aby rozpocząć</value>
   </data>
 </root>

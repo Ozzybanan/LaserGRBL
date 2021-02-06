@@ -117,32 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LblCurrentVersion.Text" xml:space="preserve">
-    <value>0.0.0</value>
-  </data>
-  <data name="TxtHeader.Text" xml:space="preserve">
-    <value>Znaleziono nową wersję. Zalecamy aktualizację LaserGRBL, 
-	aby skorzystać z nowych funkcji i poprawki błędów.</value>
-  </data>
-  <data name="TxtCurrentV.Text" xml:space="preserve">
-    <value>Obecna wersja:</value>
-  </data>
-  <data name="LblLatestVersion.Text" xml:space="preserve">
-    <value>0.0.0</value>
-  </data>
-  <data name="TxtNewV.Text" xml:space="preserve">
-    <value>Ostatnia wersja:</value>
-  </data>
-  <data name="BtnWebsite.Text" xml:space="preserve">
-    <value>Strona internetowa</value>
-  </data>
-  <data name="BtnCancel.Text" xml:space="preserve">
-    <value>Anuluj</value>
-  </data>
-  <data name="BtnUpdate.Text" xml:space="preserve">
-    <value>Pobieranie!</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Formularz nowej wersji</value>
+  <data name="LblFormDescription.Text" xml:space="preserve">
+    <value>Nie martw się, to nie jest Twoja wina! Wystąpił błąd programu spowodowany nieoczekiwanym zdarzeniem. Możesz zgłosić go programistom, otwierając problem na https://github.com/arkypita/LaserGRBL/issues.
+
+Proszę skopiować następującą wiadomość w swoim raporcie.</value>
   </data>
 </root>

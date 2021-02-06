@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="TpPreview.Text" xml:space="preserve">
     <value>Podgląd zmian</value>
@@ -320,5 +320,17 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Importuj obraz rastrowy</value>
+  </data>
+  <data name="TbPassthroughInfo.Text" xml:space="preserve">
+    <value>Tryb Passthrough pozostawia obraz w stanie nienaruszonym, bez jakiegokolwiek przetwarzania przez LaserGRBL. Obraz zostanie wygrawerowany linia po linii, poziomo, zgodnie z rozmiarem i rozdzielczością DPI zawartymi w informacji o pliku.</value>
+  </data>
+  <data name="GbPassthrough.Text" xml:space="preserve">
+    <value>Opcje Passthrough</value>
+  </data>
+  <data name="RbNoProcessing.Text" xml:space="preserve">
+    <value>Passthrough</value>
+  </data>
+  <data name="RbNoProcessing.ToolTip" xml:space="preserve">
+    <value>Brak przetwarzania (passthrough)</value>
   </data>
 </root>

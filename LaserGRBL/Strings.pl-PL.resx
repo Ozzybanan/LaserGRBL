@@ -303,7 +303,7 @@ Czy chcesz przepisać konfigurację?</value>
     <value>Ten typ pliku nie jest obsługiwany.</value>
   </data>
   <data name="MacStatusRun" xml:space="preserve">
-    <value>Biegać</value>
+    <value>Bieganie</value>
   </data>
   <data name="BoxConfigDetectedChangesTitle" xml:space="preserve">
     <value>Wykryto zmiany!</value>
@@ -327,5 +327,81 @@ Kontynuować mimo wszystko?</value>
   </data>
   <data name="BoxAbortProgramConfirm" xml:space="preserve">
     <value>Przerwać obecną pracę?</value>
+  </data>
+  <data name="WarnSoftLimitOOB" xml:space="preserve">
+    <value>Ustawiłeś rozmiar i przesunięcie, które sprawiają, że praca jest większa niż obszar roboczy skonfigurowany w urządzeniu grawerującym ({0} mm x {1} mm).
+Parametry Grbl 130 $ i 131 $.
+
+Może to wygenerować błąd limitu miękkiego lub maszyna może zderzyć się z granicą osi. Czy jesteś pewien wprowadzonych wartości?</value>
+  </data>
+  <data name="WarnSoftLimitNS" xml:space="preserve">
+    <value>Ustawiłeś ujemne przesunięcia, ale twój grawer jest ustawiony na używanie dodatniej przestrzeni z włączonym alarmem miękkiego limitu (20 $ = 1).
+
+Może to spowodować błąd limitu miękkiego. Czy jesteś pewien wprowadzonych wartości?</value>
+  </data>
+  <data name="WarnCenterline64bit" xml:space="preserve">
+    <value>Opcja Centerline nie jest kompatybilna z twoim komputerem.
+Potrzebny jest 64-bitowy system operacyjny!</value>
+  </data>
+  <data name="WarnLine2LinePWM" xml:space="preserve">
+    <value>Opcja Line2Line nie jest kompatybilna z twoim grawerem lub twoją konfiguracją. Wymagany jest laser z obsługą PWM, a obsługę PWM należy włączyć w ustawieniach LaserGRBL.</value>
+  </data>
+  <data name="MsgboxCannotOpenFileNow" xml:space="preserve">
+    <value>Nie można teraz otworzyć nowego pliku.</value>
+  </data>
+  <data name="WarnSoftLimitTitle" xml:space="preserve">
+    <value>Potwierdzenie granic pracy</value>
+  </data>
+  <data name="WarnMessageBoxHeader" xml:space="preserve">
+    <value>Ostrzeżenie</value>
+  </data>
+  <data name="DirectionNewCross" xml:space="preserve">
+    <value>Wypełnienie Krzyżowe</value>
+  </data>
+  <data name="DirectionNewDiagonal" xml:space="preserve">
+    <value>Ukośny</value>
+  </data>
+  <data name="DirectionNewDiagonalCross" xml:space="preserve">
+    <value>Wypełnienie Ukośne Krzyżowe</value>
+  </data>
+  <data name="DirectionNewDiagonalGrid" xml:space="preserve">
+    <value>Ukośna Siatka</value>
+  </data>
+  <data name="DirectionNewGrid" xml:space="preserve">
+    <value>Siatka</value>
+  </data>
+  <data name="DirectionNewHorizontal" xml:space="preserve">
+    <value>Poziomo</value>
+  </data>
+  <data name="DirectionNewInsetFilling" xml:space="preserve">
+    <value>Wypełnienie Wstawka</value>
+  </data>
+  <data name="DirectionNewReverseDiagonal" xml:space="preserve">
+    <value>Przekątna Odwrócona</value>
+  </data>
+  <data name="DirectionNewSquares" xml:space="preserve">
+    <value>Kwadraty</value>
+  </data>
+  <data name="DirectionNewVertical" xml:space="preserve">
+    <value>Pionowo</value>
+  </data>
+  <data name="DirectionNewZigZag" xml:space="preserve">
+    <value>Zig Zag (zygzak)</value>
+  </data>
+  <data name="WarnWrongLaserMode" xml:space="preserve">
+    <value>M4 Dynamic Laser Power Mode ”został ustawiony, ale Twój grawer nie obsługuje tego.
+Tylko grawerki z wersją grbl &amp;gt;= 1.1 z włączonym "trybem laserowym" ($32=1) mogą korzystać z opcji M4.</value>
+  </data>
+  <data name="WarnWrongLaserModeTitle" xml:space="preserve">
+    <value>Ostrzeżenie</value>
+  </data>
+  <data name="DirectionNewHilbert" xml:space="preserve">
+    <value>Hilbert</value>
+  </data>
+  <data name="DitheringOptions" xml:space="preserve">
+    <value>Opcje Dithering</value>
+  </data>
+  <data name="Line2LineOptions" xml:space="preserve">
+    <value>Opcje Linia Do Linii</value>
   </data>
 </root>

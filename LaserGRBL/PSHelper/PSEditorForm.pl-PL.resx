@@ -162,4 +162,7 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Laser &amp;amp; Baza danych materiałów</value>
   </data>
+  <data name="ColPower.HeaderText" xml:space="preserve">
+    <value>Moc</value>
+  </data>
 </root>

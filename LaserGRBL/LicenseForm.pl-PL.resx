@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value> OGÓLNA LICENCJA PUBLICZNA GNU
+Wersja 3, 29 czerwca 2007
+
+Copyright © 2007 Free Software Foundation, Inc. &amp; lt; https: //fsf.org/&gt;
+
+Każdy może kopiować i rozpowszechniać dosłowne kopie tego dokumentu licencyjnego, ale jego zmiana jest niedozwolona.
+
+Preambuła
+Powszechna Licencja Publiczna GNU jest wolną licencją typu copyleft na oprogramowanie i inne rodzaje dzieł.
+
+Licencje na większość oprogramowania i innych praktycznych dzieł mają na celu odebranie Ci swobody udostępniania i zmieniania dzieł. Z kolei Powszechna Licencja Publiczna GNU ma na celu zagwarantowanie wolności udostępniania i zmiany wszystkich wersji programu - aby upewnić się, że pozostanie on wolnym oprogramowaniem dla wszystkich jego użytkowników. My, Free Software Foundation, używamy Powszechnej Licencji Publicznej GNU dla większości naszego oprogramowania; dotyczy to także wszystkich innych utworów wydanych w ten sposób przez autorów. Możesz go również zastosować do swoich programów.
+
+Kiedy mówimy o wolnym oprogramowaniu, mamy na myśli wolność, a nie cenę. Nasze ogólne licencje publiczne mają na celu zapewnienie swobody rozpowszechniania kopii bezpłatnego oprogramowania (i pobierania za nie opłat, jeśli chcesz), otrzymywania kodu źródłowego lub możliwości jego uzyskania, jeśli chcesz, oraz możliwości zmiany oprogramowania lub użyj jej fragmentów w nowych darmowych programach i wiesz, że możesz robić te rzeczy.
+
+Aby chronić Twoje prawa, musimy uniemożliwić innym odmawianie Ci tych praw lub proszenie Cię o zrzeczenie się tych praw. W związku z tym, jeśli rozpowszechniasz kopie oprogramowania lub je modyfikujesz, masz pewne obowiązki: obowiązek poszanowania wolności innych osób.
+
+Na przykład, jeśli rozpowszechniasz kopie takiego programu, bezpłatnie lub za opłatą, musisz przekazać odbiorcom te same prawa, które otrzymałeś. Musisz upewnić się, że oni również otrzymają lub mogą uzyskać kod źródłowy. Musisz pokazać im te warunki, aby znali swoje prawa.
+
+Programiści korzystający z GNU GPL chronią Twoje prawa w dwóch krokach: (1) dochodzą praw autorskich do oprogramowania i (2) oferują Ci tę Licencję, dając Ci prawne pozwolenie na jego kopiowanie, rozpowszechnianie i / lub modyfikowanie.
+
+W celu ochrony deweloperów i autorów, GPL wyraźnie wyjaśnia, że ​​nie ma gwarancji na to bezpłatne oprogramowanie. Ze względu zarówno na użytkowników, jak i autorów, GPL wymaga, aby zmodyfikowane wersje były oznaczone jako zmienione, aby ich problemy nie zostały błędnie przypisane autorom poprzednich wersji.
+
+Niektóre urządzenia są zaprojektowane tak, aby odmawiać użytkownikom dostępu do instalowania lub uruchamiania zmodyfikowanych wersji oprogramowania w nich zawartego, chociaż producent może to zrobić. Jest to zasadniczo niezgodne z celem ochrony swobody użytkowników w zakresie zmiany oprogramowania. Systematyczny wzorzec takich nadużyć występuje w obszarze produktów przeznaczonych do użytku przez osoby fizyczne, a dokładnie tam, gdzie jest to najbardziej niedopuszczalne. W związku z tym zaprojektowaliśmy tę wersję GPL tak, aby zabraniać takich praktyk w przypadku tych produktów. Jeśli takie problemy pojawią się istotnie w innych domenach, jesteśmy gotowi rozszerzyć to postanowienie na te domeny w przyszłych wersjach GPL, aby chronić wolność użytkowników.
+
+Wreszcie, każdy program jest stale zagrożony patentami na oprogramowanie. Państwa nie powinny pozwalać, aby patenty ograniczały rozwój i używanie oprogramowania na komputerach ogólnego przeznaczenia, ale w tych, które to robią, chcemy uniknąć szczególnego niebezpieczeństwa, że ​​patenty zastosowane do wolnego programu mogą sprawić, że będzie on faktycznie zastrzeżony. Aby temu zapobiec, GPL zapewnia, że ​​patenty nie mogą być wykorzystane do uczynienia programu niewolnym.
+
+Dokładne warunki kopiowania, rozpowszechniania i modyfikacji podane są poniżej.
+
+REGULAMIN
+0. Definicje.
+„Niniejsza Licencja” odnosi się do wersji 3 Powszechnej Licencji Publicznej GNU.
+
+„Prawa autorskie” oznaczają również prawa podobne do praw autorskich, które mają zastosowanie do innych rodzajów dzieł, takich jak maski półprzewodnikowe.
+
+„Program” oznacza dowolną pracę podlegającą prawom autorskim, licencjonowaną w ramach niniejszej Licencji. Do każdego licencjobiorcy zwracamy się „Ty”. „Licencjobiorcami” i „odbiorcami” mogą być osoby lub organizacje.
+
+„Modyfikacja” utworu oznacza kopiowanie lub adaptowanie całości lub części utworu w sposób wymagający zgody praw autorskich, inny niż wykonanie dokładnej kopii. Powstała w ten sposób praca nazywana jest „zmodyfikowaną wersją” wcześniejszej pracy lub pracą „opartą na” wcześniejszej pracy.
+
+„Praca objęta licencją” oznacza niezmodyfikowany Program lub pracę opartą na Programie.
+
+„Rozpowszechnianie” utworu oznacza robienie z nim czegokolwiek, co bez pozwolenia naraziłoby na bezpośrednią lub wtórną odpowiedzialność za naruszenie zgodnie z obowiązującym prawem autorskim, z wyjątkiem wykonywania go na komputerze lub modyfikowania kopii prywatnej. Rozpowszechnianie obejmuje kopiowanie, rozpowszechnianie (z modyfikacjami lub bez), publiczne udostępnianie, aw niektórych krajach także inne działania.
+
+„Przekazywanie” utworu oznacza wszelkiego rodzaju rozpowszechnianie, które umożliwia innym osobom wykonywanie lub otrzymywanie kopii. Zwykła interakcja z użytkownikiem za pośrednictwem sieci komputerowej, bez przesyłania kopii, nie jest nośnikiem.
+
+Interaktywny interfejs użytkownika wyświetla „Odpowiednie informacje prawne” w zakresie, w jakim zawiera wygodną i dobrze widoczną funkcję, która (1) wyświetla odpowiednią informację o prawach autorskich oraz (2) informuje użytkownika, że ​​nie ma gwarancji na dzieło (z wyjątkiem zakres, w jakim udzielane są gwarancje), że licencjobiorcy mogą przekazywać utwór na podstawie niniejszej Licencji oraz jak przeglądać kopię tej Licencji. Jeśli interfejs przedstawia listę poleceń lub opcji użytkownika, takich jak menu, widoczna pozycja na liście spełnia to kryterium.
+
+1. Kod źródłowy.
+„Kod źródłowy” utworu oznacza preferowaną formę utworu do wprowadzania w nim modyfikacji. „Kod obiektowy” oznacza dowolną formę utworu niebędącą źródłem.
+
+„Interfejs standardowy” oznacza interfejs, który jest oficjalnym standardem zdefiniowanym przez uznaną organizację normalizacyjną lub, w przypadku interfejsów określonych dla określonego języka programowania, interfejs szeroko stosowany wśród programistów pracujących w tym języku.
+
+„Biblioteki systemowe” pracy wykonywalnej obejmują wszystko, poza pracą jako całością, co (a) jest zawarte w normalnej formie pakowania głównego komponentu, ale nie jest częścią tego głównego komponentu, oraz (b) służy jedynie do umożliwienia korzystania z pracy z tym głównym komponentem lub do zaimplementowania standardowego interfejsu, dla którego implementacja jest publicznie dostępna w postaci kodu źródłowego. „Główny składnik” w tym kontekście oznacza główny istotny składnik (jądro, system okien itd.) Konkretnego systemu operacyjnego (jeśli istnieje), na którym działa wykonywalna praca, lub kompilator użyty do wykonania pracy, lub interpreter kodu obiektowego użyty do jego uruchomienia.
+
+„Odpowiednie źródło” dla dzieła w postaci kodu wynikowego oznacza cały kod źródłowy potrzebny do wygenerowania, zainstalowania i (w przypadku pracy wykonywalnej) uruchomienia kodu wynikowego i zmodyfikowania dzieła, w tym skryptów kontrolujących te czynności. Nie obejmuje to jednak Bibliotek systemowych utworu ani narzędzi ogólnego przeznaczenia lub ogólnie dostępnych bezpłatnych programów, które są używane niezmodyfikowane podczas wykonywania tych czynności, ale które nie są częścią utworu. Na przykład Odpowiadające Źródło zawiera pliki definicji interfejsu powiązane z plikami źródłowymi pracy oraz kod źródłowy bibliotek współdzielonych i dynamicznie połączonych podprogramów, których praca jest specjalnie zaprojektowana, aby wymagać, na przykład poprzez intymną komunikację danych lub przepływ sterowania między tymi podprogramami i inne części pracy.
+
+Odpowiednie Źródło nie musi zawierać niczego, co użytkownicy mogą automatycznie odtworzyć z innych części Odpowiedniego Źródła.
+
+Odpowiednim Źródłem pracy w formie kodu źródłowego jest ta sama praca.
+
+2. Podstawowe uprawnienia.
+Wszelkie prawa przyznane na mocy niniejszej Licencji są udzielane na czas trwania praw autorskich do Programu i są nieodwołalne, o ile spełnione są określone warunki. Niniejsza Licencja wyraźnie potwierdza Twoje nieograniczone pozwolenie na uruchamianie niezmodyfikowanego Programu. Wynik uruchomienia utworu objętego licencją jest objęty niniejszą Licencją tylko wtedy, gdy wynik, biorąc pod uwagę jego zawartość, stanowi utwór objęty licencją. Niniejsza Licencja potwierdza Twoje prawa do dozwolonego użytku lub innego odpowiednika, zgodnie z prawem autorskim.
+
+Możesz tworzyć, uruchamiać i rozpowszechniać objęte licencją utwory, których nie przekazujesz, bez warunków, o ile Twoja licencja pozostaje w mocy. Możesz przekazywać utwory objęte licencją innym wyłącznie w celu nakłonienia ich do dokonywania modyfikacji wyłącznie dla Ciebie lub zapewnienia Ci udogodnień do prowadzenia tych prac, pod warunkiem, że przestrzegasz warunków niniejszej Licencji w przekazywaniu wszystkich materiałów, nad którymi nie masz kontroli. prawa autorskie. Ci, którzy w ten sposób tworzą lub obsługują utwory objęte licencją, muszą to robić wyłącznie w Twoim imieniu, pod Twoim kierownictwem i pod Twoją kontrolą, na warunkach, które zabraniają im wykonywania jakichkolwiek kopii Twoich materiałów chronionych prawami autorskimi poza relacjami z Tobą.
+
+Przekazywanie w innych okolicznościach jest dozwolone wyłącznie na warunkach określonych poniżej. Sublicencjonowanie nie jest dozwolone; sekcja 10 sprawia, że ​​jest to zbędne.
+
+3. Ochrona praw użytkowników przed prawem przeciwdziałającym obchodzeniu przepisów.
+Żadne dzieło objęte gwarancją nie będzie uważane za część skutecznego środka technicznego na mocy jakiegokolwiek obowiązującego prawa, które spełnia zobowiązania wynikające z artykułu 11 traktatu WIPO o prawach autorskich przyjętego 20 grudnia 1996 roku lub podobnych przepisów zakazujących lub ograniczających obchodzenie takich środków.
+
+Przekazując utwór objęty licencją, zrzekasz się wszelkich uprawnień prawnych do zakazania obchodzenia środków technicznych w zakresie, w jakim takie obchodzenie jest dokonywane poprzez wykonywanie praw wynikających z niniejszej Licencji w odniesieniu do utworu objętego licencją, i zrzekasz się wszelkich zamiarów ograniczenia działania lub modyfikacji działać jako środek egzekwowania, przeciwko użytkownikom utworu, praw użytkownika lub stron trzecich do zakazu obchodzenia środków technicznych.
+
+4. Przekazywanie wiernych kopii.
+Możesz przekazywać wierne kopie kodu źródłowego Programu w takiej postaci, w jakiej go otrzymałeś, na dowolnym nośniku, pod warunkiem, że w widoczny sposób i odpowiednio opublikujesz na każdej kopii odpowiednią informację o prawach autorskich; zachować nienaruszone wszelkie uwagi stwierdzające, że niniejsza Licencja i wszelkie niedozwolone warunki dodane zgodnie z sekcją 7 mają zastosowanie do kodu; zachować nienaruszone wszelkie powiadomienia o braku jakiejkolwiek gwarancji; i przekaż wszystkim odbiorcom kopię niniejszej Licencji wraz z Programem.
+
+Za każdą przekazaną kopię możesz naliczyć dowolną cenę lub żadną cenę, a także możesz zaoferować odpłatne wsparcie lub ochronę gwarancyjną.
+
+5. Przenoszenie zmodyfikowanych wersji źródła.
+Możesz przekazać pracę opartą na Programie lub modyfikacje do jej wytworzenia z Programu, w formie kodu źródłowego na warunkach określonych w sekcji 4, pod warunkiem, że spełniasz również wszystkie poniższe warunki:
+
+a) Praca musi zawierać wyraźne uwagi stwierdzające, że ją zmodyfikowałeś i podającą odpowiednią datę.
+b) Dzieło musi zawierać wyraźne uwagi stwierdzające, że zostało wydane na podstawie niniejszej Licencji i wszelkich warunków dodanych w sekcji 7. Ten wymóg zmienia wymóg w sekcji 4 dotyczący „zachowania wszystkich powiadomień w stanie nienaruszonym”.
+c) Musisz udzielić licencji na całą pracę, jako całość, w ramach niniejszej Licencji każdemu, kto wejdzie w posiadanie kopii. W związku z tym niniejsza Licencja będzie miała zastosowanie, wraz z wszelkimi mającymi zastosowanie dodatkowymi warunkami określonymi w sekcji 7, do całości utworu i wszystkich jego części, niezależnie od sposobu ich zapakowania. Niniejsza Licencja nie upoważnia do licencjonowania utworu w żaden inny sposób, ale nie unieważnia takiego pozwolenia, jeśli otrzymałeś je oddzielnie.
+d) Jeśli dzieło ma interaktywne interfejsy użytkownika, każdy musi wyświetlać odpowiednie informacje prawne; jeśli jednak Program ma interaktywne interfejsy, które nie wyświetlają Stosownych informacji prawnych, Twoja praca nie musi do tego zmuszać.
+Zestawienie utworu objętego licencją z innymi odrębnymi i niezależnymi utworami, które ze swej natury nie są rozszerzeniami utworu objętego licencją i które nie są z nim połączone w taki sposób, aby tworzyć większy program, w lub na woluminie magazynu lub dystrybucji medium, zwane jest „agregatem”, jeśli kompilacja i wynikające z niej prawa autorskie nie są wykorzystywane do ograniczania dostępu lub praw prawnych użytkowników kompilacji poza to, na co pozwalają poszczególne utwory. Włączenie utworu objętego licencją do agregatu nie powoduje, że niniejsza Licencja ma zastosowanie do innych części agregatu.
+
+6. Przenoszenie formularzy niebędących źródłem.
+Możesz przekazać utwór objęty licencją w formie kodu wynikowego na warunkach określonych w punktach 4 i 5, pod warunkiem, że przekazujesz również możliwe do odczytu maszynowego Odpowiednie Źródło zgodnie z warunkami niniejszej Licencji, w jeden z następujących sposobów:
+
+a) Przekaż kod wynikowy w fizycznym produkcie (w tym fizycznym nośniku dystrybucji) lub zawarty w nim, wraz z Odpowiednim Źródłem utrwalonym na trwałym nośniku fizycznym, zwykle używanym do wymiany oprogramowania.
+b) Przekaż kod wynikowy w fizycznym produkcie (w tym fizycznym nośniku dystrybucji) lub zawarty w nim, wraz z pisemną ofertą, ważną przez co najmniej trzy lata i ważną tak długo, jak będziesz oferować części zamienne lub obsługę klienta w tym zakresie model produktu, w celu przekazania każdemu, kto posiada kod wynikowy, albo (1) kopii Odpowiedniego Źródła dla całego oprogramowania w produkcie, który jest objęty niniejszą Licencją, na trwałym nośniku fizycznym, zwykle używanym do wymiany oprogramowania, za cenę nie więcej niż rozsądny koszt fizycznego przekazania źródła lub (2) dostęp do kopiowania Odpowiedniego Źródła z serwera sieciowego bez żadnych opłat.
+c) Przekaż indywidualne kopie kodu wynikowego wraz z kopią pisemnej oferty dostarczenia Odpowiedniego Źródła. Ta alternatywa jest dozwolona tylko sporadycznie i niekomercyjnie i tylko wtedy, gdy otrzymałeś kod wynikowy z taką ofertą, zgodnie z podpunktem 6b.
+d) Przekaż kod wynikowy, oferując dostęp z wyznaczonego miejsca (bezpłatnie lub za opłatą) i oferuj równoważny dostęp do Odpowiedniego Źródła w ten sam sposób przez to samo miejsce bez dodatkowych opłat. Nie musisz wymagać od odbiorców, aby kopiowali Odpowiednie Źródło wraz z kodem wynikowym. Jeśli miejscem kopiowania kodu obiektowego jest serwer sieciowy, Odpowiednie Źródło może znajdować się na innym serwerze (obsługiwanym przez Ciebie lub stronę trzecią), który obsługuje równoważne narzędzia do kopiowania, pod warunkiem, że zachowasz jasne wskazówki obok kodu wynikowego, informujące, gdzie należy znajdź Odpowiednie Źródło. Niezależnie od tego, na jakim serwerze znajduje się Odpowiednie Źródło, pozostajesz zobowiązany do zapewnienia, że ​​będzie ono dostępne tak długo, jak jest to konieczne do spełnienia tych wymagań.
+e) Przekaż kod wynikowy za pomocą transmisji peer-to-peer, pod warunkiem, że poinformujesz innych rówieśników, gdzie kod wynikowy i Odpowiednie źródło utworu są oferowane ogółowi społeczeństwa bez opłat zgodnie z podsekcją 6d.
+Oddzielna część kodu wynikowego, której kod źródłowy jest wykluczony z Odpowiedniego Źródła jako biblioteki systemowej, nie musi być uwzględniona w przekazywaniu pracy z kodem wynikowym.
+
+„Produkt użytkownika” to (1) „produkt konsumencki”, co oznacza każdą materialną własność osobistą, która jest normalnie używana do celów osobistych, rodzinnych lub domowych, albo (2) wszystko, co zostało zaprojektowane lub sprzedane w celu włączenia do mieszkania. Przy ustalaniu, czy produkt jest produktem konsumenckim, wątpliwe przypadki będą rozstrzygane na korzyść objęcia ubezpieczeniem. W przypadku określonego produktu otrzymanego przez określonego użytkownika określenie „zwykle używane” odnosi się do typowego lub powszechnego zastosowania tej klasy produktów, niezależnie od statusu konkretnego użytkownika lub sposobu, w jaki dany użytkownik faktycznie używa, oczekuje lub ma używać produktu. Produkt jest produktem konsumenckim niezależnie od tego, czy ma istotne zastosowania komercyjne, przemysłowe czy niekonsumenckie, chyba że takie zastosowania stanowią jedyny znaczący sposób użycia produktu.
+
+„Informacje instalacyjne” w przypadku Produktu Użytkownika oznaczają wszelkie metody, procedury, klucze autoryzacyjne lub inne informacje wymagane do zainstalowania i wykonania zmodyfikowanych wersji dzieła objętego Licencją w tym Produkcie Użytkownika ze zmodyfikowanej wersji Odpowiedniego Źródła. Informacje muszą wystarczyć, aby zapewnić, że dalsze funkcjonowanie zmodyfikowanego kodu wynikowego nie będzie w żadnym przypadku uniemożliwione lub zakłócone wyłącznie z powodu wprowadzenia modyfikacji.
+
+Jeśli przekazujesz kod wynikowy, zgodnie z tą sekcją, w Produkcie Użytkownika, z nim lub specjalnie do wykorzystania w Produkcie Użytkownika, a przekazanie następuje w ramach transakcji, w której prawo do posiadania i używania Produktu Użytkownika zostaje przeniesione na odbiorcy na zawsze lub na czas określony (niezależnie od tego, w jaki sposób transakcja jest scharakteryzowana), Odpowiadającemu Źródłu przekazanemu zgodnie z tą sekcją należy dołączyć Informacje Instalacyjne. Ale to wymaganie nie ma zastosowania, jeśli ani Ty, ani żadna osoba trzecia nie zachowują możliwości zainstalowania zmodyfikowanego kodu obiektowego w Produkcie Użytkownika (na przykład praca została zainstalowana w pamięci ROM).
+
+Wymóg dostarczenia Informacji o instalacji nie obejmuje wymogu dalszego świadczenia usług pomocy technicznej, gwarancji lub aktualizacji dla pracy, która została zmodyfikowana lub zainstalowana przez odbiorcę, ani dla Produktu użytkownika, w którym została zmodyfikowana lub zainstalowana. Dostęp do sieci może zostać odmówiony, gdy sama modyfikacja istotnie i niekorzystnie wpływa na działanie sieci lub narusza zasady i protokoły komunikacji w sieci.
+
+Przekazane odpowiednie źródło i dostarczone informacje dotyczące instalacji, zgodnie z tą sekcją, muszą być w formacie, który jest publicznie udokumentowany (oraz z publiczną implementacją w postaci kodu źródłowego) i nie mogą wymagać specjalnego hasła ani klucza do rozpakowania, odczytania lub kopiowanie.
+
+7. Warunki dodatkowe.
+„Dodatkowe uprawnienia” to warunki, które uzupełniają warunki niniejszej Licencji, wprowadzając wyjątki od co najmniej jednego z jej warunków. Dodatkowe uprawnienia, które mają zastosowanie do całego Programu, będą traktowane tak, jakby były zawarte w niniejszej Licencji, w zakresie, w jakim są ważne zgodnie z obowiązującym prawem. Jeśli dodatkowe uprawnienia dotyczą tylko części Programu, ta część może być używana oddzielnie w ramach tych uprawnień, ale cały Program podlega niniejszej Licencji, bez względu na dodatkowe uprawnienia.
+
+Przekazując kopię utworu objętego licencją, możesz według własnego uznania usunąć wszelkie dodatkowe uprawnienia z tej kopii lub z dowolnej jej części. (Dodatkowe zezwolenia mogą wymagać ich własnego usunięcia w niektórych przypadkach, gdy modyfikujesz dzieło). Możesz umieścić dodatkowe pozwolenia na materiał, dodany przez Ciebie do utworu objętego licencją, na który masz lub możesz udzielić odpowiedniego pozwolenia na prawa autorskie.
+
+Bez względu na jakiekolwiek inne postanowienia niniejszej Licencji, w przypadku materiałów dodawanych do utworu objętego licencją, możesz (za zgodą właścicieli praw autorskich do tych materiałów) uzupełnić warunki niniejszej Licencji o warunki:
+
+a) Zrzeczenie się gwarancji lub ograniczenie odpowiedzialności w sposób odmienny od warunków określonych w punktach 15 i 16 niniejszej Licencji; lub
+b) Żądanie zachowania określonych uzasadnionych informacji prawnych lub informacji o autorze w tym materiale lub w odpowiednich informacjach prawnych wyświetlanych w zawierających je pracach; lub
+c) Zakaz wprowadzania w błąd co do pochodzenia tych materiałów lub wymagania, aby zmodyfikowane wersje takich materiałów były oznaczane w rozsądny sposób jako różne od wersji oryginalnej; lub
+d) Ograniczenie wykorzystywania nazwisk licencjodawców lub autorów materiałów do celów reklamowych; lub
+e) odmowa udzielenia praw na mocy prawa dotyczącego znaków towarowych do używania niektórych nazw handlowych, znaków towarowych lub znaków usługowych; lub
+f) Żądanie odszkodowania od licencjodawców i autorów tego materiału przez każdego, kto przekazuje materiał (lub jego zmodyfikowane wersje) z założeniami umownymi wobec odbiorcy, za wszelką odpowiedzialność, jaką te założenia umowne nakładają bezpośrednio na tych licencjodawców i autorów.
+Wszystkie inne niedozwolone warunki dodatkowe są uważane za „dalsze ograniczenia” w rozumieniu sekcji 10. Jeśli Program w postaci, w jakiej go otrzymałeś, lub jakakolwiek jego część, zawiera informację stwierdzającą, że podlega niniejszej Licencji, wraz z określeniem, że to kolejne ograniczenie, możesz usunąć ten termin. Jeśli dokument licencyjny zawiera dalsze ograniczenie, ale zezwala na ponowne udzielenie licencji lub przeniesienie na mocy niniejszej Licencji, możesz dodać do objętego nią materiału utworu podlegającego warunkom tego dokumentu licencyjnego, pod warunkiem, że dalsze ograniczenie nie przetrwa takiego ponownego udzielenia lub przeniesienia.
+
+Jeśli dodasz warunki do utworu objętego licencją zgodnie z tą sekcją, musisz umieścić w odpowiednich plikach źródłowych oświadczenie o dodatkowych warunkach, które mają zastosowanie do tych plików lub powiadomienie wskazujące, gdzie znaleźć odpowiednie warunki.
+
+Dodatkowe warunki, zezwalające lub nie, mogą być określone w formie oddzielnej pisemnej licencji lub określone jako wyjątki; powyższe wymagania mają zastosowanie w obu przypadkach.
+
+8. Wypowiedzenie.
+Nie możesz propagować ani modyfikować utworu objętego licencją, z wyjątkiem przypadków wyraźnie określonych w niniejszej Licencji. Wszelkie próby propagowania lub modyfikowania go w inny sposób są nieważne i powodują automatyczne wygaśnięcie twoich praw wynikających z niniejszej Licencji (w tym wszelkich licencji patentowych udzielonych zgodnie z trzecim akapitem sekcji 11).
+
+Jeśli jednak zaprzestaniesz wszelkich naruszeń niniejszej Licencji, wówczas Twoja licencja od konkretnego właściciela praw autorskich zostanie przywrócona (a) tymczasowo, chyba że właściciel praw autorskich wyraźnie i ostatecznie wypowie Twoją licencję, oraz (b) na stałe, jeśli właściciel praw autorskich zawiedzie powiadomić Cię o naruszeniu w rozsądny sposób przed upływem 60 dni od zaprzestania.
+
+Co więcej, twoja licencja od konkretnego posiadacza praw autorskich jest przywracana na stałe, jeśli posiadacz praw autorskich powiadomi cię o naruszeniu w rozsądny sposób, jest to pierwszy raz, kiedy otrzymałeś powiadomienie o naruszeniu niniejszej Licencji (dla jakiejkolwiek pracy) od tego właściciela praw autorskich, i usuniesz naruszenie przed upływem 30 dni od otrzymania powiadomienia.
+
+Wygaśnięcie twoich praw na mocy tej sekcji nie powoduje wygaśnięcia licencji stron, które otrzymały od ciebie kopie lub prawa na mocy niniejszej Licencji. Jeśli Twoje prawa zostały zakończone i nie zostały przywrócone na stałe, nie kwalifikujesz się do otrzymania nowych licencji na ten sam materiał zgodnie z punktem 10.
+
+9. Akceptacja nie jest wymagana do posiadania kopii.
+Nie musisz akceptować niniejszej Licencji, aby otrzymać lub uruchomić kopię Programu. Pomocnicze rozpowszechnianie utworu objętego licencją, występujące wyłącznie w wyniku korzystania z transmisji peer-to-peer w celu odebrania kopii, również nie wymaga akceptacji. Jednak nic poza niniejszą Licencją nie daje Ci pozwolenia na propagowanie lub modyfikowanie jakiejkolwiek pracy objętej licencją. Te działania naruszają prawa autorskie, jeśli nie zaakceptujesz niniejszej Licencji. W związku z tym, modyfikując lub propagując utwór objęty licencją, wyrażasz zgodę na niniejszą Licencję, aby to zrobić.
+
+10. Automatyczne licencjonowanie dalszych odbiorców.
+Za każdym razem, gdy przekazujesz utwór objęty licencją, odbiorca automatycznie otrzymuje licencję od pierwotnych licencjodawców na uruchamianie, modyfikowanie i propagowanie tego utworu, z zastrzeżeniem niniejszej Licencji. Nie jesteś odpowiedzialny za egzekwowanie przestrzegania niniejszej Licencji przez osoby trzecie.
+
+„Transakcja jednostki” to transakcja przenosząca kontrolę nad organizacją lub zasadniczo wszystkie aktywa jednej organizacji, dzieląca organizację lub łączące się organizacje. Jeżeli rozpowszechnianie utworu objętego licencją wynika z transakcji jednostkowej, każda ze stron tej transakcji, która otrzymuje kopię utworu, otrzymuje również wszelkie licencje na utwór, które poprzednik strony posiadał lub mógłby udzielić zgodnie z poprzednim akapitem, a także prawo do posiadania Odpowiedniego Źródła utworu od poprzednika w interesie, jeśli poprzednik je posiada lub może je zdobyć przy rozsądnych wysiłkach.
+
+Nie możesz nakładać żadnych dalszych ograniczeń na wykonywanie praw przyznanych lub potwierdzonych na mocy niniejszej Licencji. Na przykład nie możesz nakładać opłaty licencyjnej, tantiem ani innych opłat za korzystanie z praw przyznanych na mocy niniejszej Licencji, a także nie możesz wszczynać postępowania sądowego (w tym roszczenia wzajemnego lub roszczenia wzajemnego w postępowaniu sądowym) za stwierdzenie, że jakiekolwiek roszczenie patentowe zostało naruszone poprzez tworzenie, używanie, sprzedaż, oferowanie na sprzedaż lub importowanie Programu lub jakiejkolwiek jego części.
+
+11. Patenty.
+„Współautor” to posiadacz praw autorskich, który zezwala na używanie w ramach niniejszej Licencji Programu lub pracy, na której oparty jest Program. Tak licencjonowana praca jest nazywana „wersją współtwórcy”.
+
+„Zasadnicze roszczenia patentowe współtwórcy” to wszystkie zastrzeżenia patentowe należące do wnoszącego lub kontrolowane przez wnoszącego, czy to już nabyte, czy też nabyte w przyszłości, które zostałyby naruszone w jakikolwiek sposób dozwolony przez niniejszą Licencję, polegający na tworzeniu, używaniu lub sprzedaży wersji autora, nie uwzględniaj roszczeń, które zostałyby naruszone jedynie w wyniku dalszej modyfikacji wersji autora. Dla celów niniejszej definicji „kontrola” obejmuje prawo do udzielania sublicencji na patenty w sposób zgodny z wymogami niniejszej Licencji.
+
+Każdy współtwórca udziela niewyłącznej, ogólnoświatowej, wolnej od opłat licencyjnych licencji patentowej w ramach podstawowych zastrzeżeń patentowych współautora, na wykonywanie, używanie, sprzedawanie, oferowanie na sprzedaż, importowanie i inne uruchamianie, modyfikowanie i propagowanie treści jego wersji dla współautorów.
+
+W poniższych trzech akapitach „licencja patentowa” to dowolne wyraźne porozumienie lub zobowiązanie, niezależnie od ich określenia, dotyczące niewykonania egzekwowania patentu (takie jak wyraźne zezwolenie na stosowanie patentu lub zobowiązanie do nie wnoszenia pozwów o naruszenie patentu). „Udzielenie” takiej licencji patentowej stronie oznacza zawarcie takiej umowy lub zobowiązanie do nieegzekwowania prawa patentowego wobec tej strony.
+
+Jeśli przekazujesz utwór objęty licencją, świadomie polegając na licencji patentowej, a odpowiednie źródło utworu nie jest dostępne dla nikogo do kopiowania, bezpłatnie i zgodnie z warunkami niniejszej Licencji, za pośrednictwem publicznie dostępnego serwera sieciowego lub innego łatwo dostępnego oznacza, że ​​musisz albo (1) spowodować, że Odpowiednie Źródło będzie tak dostępne, albo (2) zaaranżować sobie pozbawienie się korzyści z licencji patentowej na ten konkretny utwór, lub (3) zorganizować w sposób zgodny z wymagań niniejszej Licencji, w celu rozszerzenia licencji patentowej na dalszych odbiorców. „Świadome poleganie” oznacza, że ​​masz faktyczną wiedzę, że poza licencją patentową przekazujesz utwór objęty licencją w kraju lub korzystasz z utworu objętego licencją w innym kraju przez odbiorcę,
+
+Jeżeli, na podstawie lub w związku z pojedynczą transakcją lub porozumieniem, przekazujesz lub propagujesz, zlecając przekazanie utworu objętego licencją, i udzielasz licencji patentowej niektórym stronom otrzymującym utwór objęty licencją, upoważniając je do używania, lub przekazać konkretną kopię utworu objętego licencją, wówczas udzielona przez Ciebie licencja patentowa zostaje automatycznie rozszerzona na wszystkich odbiorców utworu objętego licencją i prac na nim opartych.
+
+Licencja patentowa jest „dyskryminująca”, jeśli nie obejmuje jej zakresu, zabrania wykonywania lub jest uzależniona od niewykonania jednego lub więcej praw, które są wyraźnie przyznane na mocy niniejszej Licencji. Nie możesz przekazywać utworu objętego gwarancją, jeśli jesteś stroną umowy z osobą trzecią zajmującą się dystrybucją oprogramowania, w ramach której dokonujesz płatności na rzecz osoby trzeciej w oparciu o zakres swojej działalności polegającej na przekazywaniu utworu, oraz na mocy której strona trzecia udziela, którejkolwiek ze stron, które otrzymałyby od Ciebie utwór objęty licencją, dyskryminującą licencję patentową (a) w związku z przekazanymi przez Ciebie kopiami utworu objętego licencją (lub kopiami wykonanymi z tych kopii), lub ( b) przede wszystkim dla iw związku z określonymi produktami lub kompilacjami, które zawierają objęte dzieło,
+
+Żadne z postanowień niniejszej Licencji nie może być interpretowane jako wykluczające lub ograniczające jakąkolwiek dorozumianą licencję lub inne środki obrony przed naruszeniem, które w innym przypadku mogą być dostępne dla użytkownika zgodnie z obowiązującym prawem patentowym.
+
+12. Zakaz zrzeczenia się wolności innych.
+Jeśli na ciebie nałożone są warunki (czy to nakazem sądowym, umową lub w inny sposób), które są sprzeczne z warunkami niniejszej Licencji, nie zwalniają Cię one z warunków niniejszej Licencji. Jeśli nie możesz przekazać utworu objętego licencją, aby jednocześnie wypełniać swoje zobowiązania wynikające z niniejszej Licencji i inne stosowne zobowiązania, w konsekwencji nie możesz go w ogóle przekazać. Na przykład, jeśli zgadzasz się na warunki, które zobowiązują Cię do pobierania tantiem w celu dalszego przekazania od tych, którym przekazujesz Program, jedynym sposobem na spełnienie obu tych warunków i niniejszej Licencji byłoby całkowite powstrzymanie się od przekazywania Programu.
+
+13. Używać z Powszechną Licencją Publiczną GNU Affero.
+Niezależnie od wszelkich innych postanowień niniejszej Licencji, masz pozwolenie na łączenie lub łączenie dowolnego utworu objętego licencją z utworem licencjonowanym na podstawie wersji 3 Powszechnej Licencji Publicznej GNU Affero w jedną połączoną pracę i przekazywanie powstałej pracy. Warunki niniejszej Licencji będą nadal miały zastosowanie do części będącej dziełem objętym licencją, ale specjalne wymagania Powszechnej Licencji Publicznej GNU Affero, sekcja 13, dotyczące interakcji przez sieć będą miały zastosowanie do połączenia jako takiego.
+
+14. Zmienione wersje niniejszej licencji.
+Free Software Foundation może od czasu do czasu publikować poprawione i / lub nowe wersje Powszechnej Licencji Publicznej GNU. Takie nowe wersje będą podobne w duchu do obecnej wersji, ale mogą różnić się szczegółami w celu rozwiązania nowych problemów lub obaw.
+
+Każda wersja otrzymuje wyróżniający ją numer wersji. Jeśli Program określa, że ​​ma do niego zastosowanie określona numerowana wersja Powszechnej Licencji Publicznej GNU „lub dowolna późniejsza wersja”, masz możliwość przestrzegania warunków tej numerowanej wersji lub dowolnej późniejszej wersji opublikowanej przez Wolne Oprogramowanie Fundacja. Jeśli Program nie określa numeru wersji Powszechnej Licencji Publicznej GNU, możesz wybrać dowolną wersję kiedykolwiek opublikowaną przez Free Software Foundation.
+
+Jeśli Program określa, że ​​pełnomocnik może zdecydować, które przyszłe wersje Powszechnej Licencji Publicznej GNU mogą być używane, publiczne oświadczenie tego pełnomocnika o akceptacji wersji na stałe upoważnia użytkownika do wyboru tej wersji dla Programu.
+
+Późniejsze wersje licencji mogą dawać dodatkowe lub inne uprawnienia. Jednak żadne dodatkowe obowiązki nie są nakładane na żadnego autora lub posiadacza praw autorskich w wyniku wyboru późniejszej</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>LaserGRBL to darmowe oprogramowanie, dostępne do użytku hobbystycznego i profesjonalnego, zgodnie z licencją GPL v3.0. Kod źródłowy jest dostępny pod adresem https://github.com/arkypita/LaserGRBL i można go swobodnie edytować zgodnie z warunkami licencji GPL.
+
+Prawa autorskie do projektu LaserGRBL należą do Diego Settimi (arkypita), z wyjątkiem kodu stron trzecich, który należy do ich odpowiednich właścicieli. Czy uważasz, że LaserGRBL jest przydatny? Wesprzyj projekt darowizną!</value>
+  </data>
+</root>

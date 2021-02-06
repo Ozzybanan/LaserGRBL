@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BtnCancel.Text" xml:space="preserve">
     <value>Anuluj</value>
@@ -194,11 +194,11 @@ Uwaga: LaserGRBL będzie potrzebował znacznie więcej zasobów!</value>
     <value>Import rastrowy</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
-    <value>Bez „Continuous Jog” po naciśnięciu przycisku jog LaserGRBL wysyła żądanie Jog z ustaloną prędkością i ruchem; 
-	i impuls jest w pełni wykonywany do pozycji końcowej. Jeśli włączysz opcję „Continuous Jog”, impulsowanie jest wysyłane 
-	z myszą w dół i przerywane / przerywane z myszą w górę, więc możesz wykonywać przybliżone pozycjonowanie, ale w bardzo wygodny sposób.
-UWAGA: „Continuous Jog” działa tylko z Grbl v1.1 lub nowszym i wymaga poprawnego skonfigurowania rozmiaru tabeli w konfiguracji Grbl 
-(Menu „Grbl” -&gt; „Konfiguracja Grbl” $130, $131, $132)</value>
+    <value>Bez „Continuous Jog” po naciśnięciu przycisku jog LaserGRBL wysyła żądanie Jog z ustaloną prędkością i ruchem; i impuls jest 
+	w pełni wykonywany do pozycji końcowej. Jeśli włączysz opcję „Continuous Jog”, impulsowanie jest wysyłane z myszą w dół
+	i przerywane / przerywane z myszą w górę, więc możesz wykonywać przybliżone pozycjonowanie, ale w bardzo wygodny sposób.
+UWAGA: „Continuous Jog” działa tylko z Grbl v1.1 lub nowszym i wymaga poprawnego skonfigurowania rozmiaru tabeli 
+w konfiguracji Grbl (Menu „Grbl” -&gt; „Konfiguracja Grbl” $130, $131, $132)</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>LaserGRBL nie jest przeznaczony do sterowania osią Z, ale jeśli masz maszynę z 3 osiami, być może ta opcja byłaby przydatna.</value>
@@ -376,5 +376,35 @@ Zaznacz, aby włączyć.</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Ustawienia</value>
+  </data>
+  <data name="CbDisableSkip.Text" xml:space="preserve">
+    <value>Wyłącz szybkie pomijanie G0</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>Domyślnie LaserGRBL używa G0 - szybkiego ruchu - aby pomijać białe części zadań. Przyspiesza to proces grawerowania, 
+ale może skutkować niedokładnym pozycjonowaniem z rozczarowującymi wynikami. 
+Zwykle można poprawić wyniki poprzez prawidłowe ustawienie maksymalnych wartości 
+przyspieszenia i prędkości  ($ 120,121,122 i $ 110,111,112) w konfiguracji grbl.
+
+Jeśli wyłączysz tę funkcję, LaserGRBL użyje ruchu liniowego G1 z tą samą prędkością pracy, 
+w wyniku czego cały proces grawerowania będzie wykonywany z tą samą prędkością. 
+Spowolni to proces, ale może radykalnie poprawić wynik tam, gdzie inne podejścia zawodzą</value>
+  </data>
+  <data name="CbDisableBoundWarn.Text" xml:space="preserve">
+    <value>Wyłączenie ostrzeżenia o przekroczeniu granicy</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>LaserGRBL ostrzeże Cię, jeśli zamierzasz stworzyć pracę większą niż obszar roboczy grawera.
+Ustaw tę flagę, jeśli nie chcesz tej kontroli bezpieczeństwa.</value>
+  </data>
+  <data name="CbClickNJog.Text" xml:space="preserve">
+    <value>Kliknij 'n Jog</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>Przy włączonej funkcji "click 'n jog" podwójne kliknięcie na powierzchni podglądu spowoduje przejście do pozycji kliknięcia.</value>
+  </data>
+  <data name="LblWarnOrturAC.Text" xml:space="preserve">
+    <value>Użytkownik Ortur: Oprogramowanie układowe Ortur (wszystkie wersje do 137) ma błąd w wznowieniu obróbki, który uniemożliwia prawidłowe użycie funkcji automatycznego chłodzenia.
+Nie używaj automatycznego chłodzenia z grawerem Ortur, dopóki nie zostanie wydane nowe oprogramowanie</value>
   </data>
 </root>

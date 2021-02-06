@@ -205,4 +205,16 @@ Kliknij, aby uzyskać więcej informacji ...</value>
   <data name="$this.Text" xml:space="preserve">
     <value>Obraz docelowy</value>
   </data>
+  <data name="BtnCenter.ToolTip" xml:space="preserve">
+    <value>Wyśrodkuj obraz w pionie i poziomie (zero na środku)</value>
+  </data>
+  <data name="LblLaserMode.Text" xml:space="preserve">
+    <value>Tryb lasera</value>
+  </data>
+  <data name="LblMinPerc.Text" xml:space="preserve">
+    <value>0%</value>
+  </data>
+  <data name="LblMaxPerc.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
 </root>
